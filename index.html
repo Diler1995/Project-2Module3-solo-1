@@ -8,31 +8,33 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 class="main">SCORE BOARD</h1>
     <div id="container">
         <div class="home-container">
             <h1>HOME</h1>
             <div class="score-el">
-                <h2>0</h2>
+                <h2 id="score-home">0</h2>
             </div>
             <div class="btn-container">
-                <button class="btn-class">+1</button>
-                <button class="btn-class">+2</button>
-                <button class="btn-class">+3</button>
+                <button onclick="add1()" class="btn-class">+1</button>
+                <button onclick="add2()" class="btn-class">+2</button>
+                <button onclick="add3()" class="btn-class">+3</button>
             </div>
         </div>
         <div class="guest-container">
             <h1>GUEST</h1>
             <div class="score-el">
-                <h2>0</h2>
+                <h2 id="score-guest">0</h2>
             </div>
             <div class="btn-container">
-                <button class="btn-class">+1</button>
-                <button class="btn-class">+2</button>
-                <button class="btn-class">+3</button>
+                <button onclick="addition1()" class="btn-class">+1</button>
+                <button onclick="addition2()" class="btn-class">+2</button>
+                <button onclick="addition3()" class="btn-class">+3</button>
             </div>
         </div>
     </div>
-    <button class="btn-10"><span>NEW GAME</span></button>
+    <h2 id="winner">The leading team is: </h2>
+    <button class="btn-10" onclick="newGame()"><span>NEW GAME</span></button>
 
 
     <script src="index.js"></script>
